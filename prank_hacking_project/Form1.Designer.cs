@@ -28,17 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.components = new System.ComponentModel.Container();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
             this.label1 = new System.Windows.Forms.Label();
+            this.progressTimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
-            // progressBar1
+            // progressBar
             // 
-            this.progressBar1.Location = new System.Drawing.Point(189, 298);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(378, 23);
-            this.progressBar1.TabIndex = 0;
-            this.progressBar1.Value = 50;
+            this.progressBar.Location = new System.Drawing.Point(189, 298);
+            this.progressBar.Maximum = 10000000;
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(378, 23);
+            this.progressBar.TabIndex = 0;
             // 
             // label1
             // 
@@ -50,6 +52,12 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Retrieving Data";
             // 
+            // progressTimer
+            // 
+            this.progressTimer.Enabled = true;
+            this.progressTimer.Interval = 10;
+            this.progressTimer.Tick += new System.EventHandler(this.progressTimer_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -57,7 +65,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.progressBar);
             this.Name = "Form1";
             this.Text = "Prank Hacking Fenster";
             this.ResumeLayout(false);
@@ -67,8 +75,9 @@
 
         #endregion
 
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar progressBar;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer progressTimer;
     }
 }
 
