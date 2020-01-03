@@ -12,6 +12,8 @@ namespace prank_hacking_project
 {
     public partial class Form1 : Form
     {
+        private bool skullZu = false;
+
         public Form1()
         {
             InitializeComponent();
@@ -33,28 +35,50 @@ namespace prank_hacking_project
             // progress Bar balken weiter füllen
             progressBar.Value = progressBar.Value + was_dazukommt;
 
+            
 
-            if ((double)progressBar.Value / (double)progressBar.Maximum > 0.9)
+            // progressbar status text
+            double progress_anteil = (double) progressBar.Value / (double) progressBar.Maximum;
+            if (progress_anteil > 0.9)
             {
                 progresslabel.Text = "steam libary cleared";
-
             }
-            else if ((double)progressBar.Value / (double)progressBar.Maximum > 0.7)
+            else if (progress_anteil > 0.7)
             {
                 progresslabel.Text = "sending game keys to albanien servers";
-
             }
-            else if ((double)progressBar.Value / (double)progressBar.Maximum > 0.4)
+            else if (progress_anteil > 0.4)
             {
                 progresslabel.Text = "unlocking game keys";
-
             }
             else
             {
                 progresslabel.Text = "searching for passwords";
-
             }
 
+            // schliessen, wenn voll
+            if (progress_anteil >= 0.99)
+            {
+                Close();
+            }
+        }
+
+        /**
+         * Timer tick um das skull Bild zu Ändern
+         */
+        private void skulltimer_Tick(object sender, EventArgs e)
+        {
+            if (skullZu == true)
+            {
+                pictureBox1.BackgroundImage = prank_hacking_project.Properties.Resources.blue_skull_zu;
+                skullZu = false;
+            }
+            else
+            {
+                pictureBox1.BackgroundImage = prank_hacking_project.Properties.Resources.blue_skull;
+                skullZu = true;
+            }
+            pictureBox1.Refresh();
         }
     }
 }
