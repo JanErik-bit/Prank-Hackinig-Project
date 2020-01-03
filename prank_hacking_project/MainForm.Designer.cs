@@ -1,6 +1,6 @@
 ﻿namespace prank_hacking_project
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Erforderliche Designervariable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.label1 = new System.Windows.Forms.Label();
             this.progressTimer = new System.Windows.Forms.Timer(this.components);

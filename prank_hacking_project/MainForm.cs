@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace prank_hacking_project
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         private bool skullZu = false;
 
-        public Form1()
+        private ZahlenForm zahlenFenster = new ZahlenForm();
+
+        public MainForm()
         {
             InitializeComponent();
         }
@@ -50,6 +52,14 @@ namespace prank_hacking_project
             else if (progress_anteil > 0.4)
             {
                 progresslabel.Text = "unlocking game keys";
+            }
+            else if (progress_anteil > 0.1)
+            {
+                if (!zahlenFenster.Enabled)
+                {
+                    zahlenFenster.Enabled = true;
+                    zahlenFenster.Show();
+                }
             }
             else
             {

@@ -1,3 +1,4 @@
 .vs*
 prank_hacking_project/bin
 prank_hacking_project/obj
+*.sln
