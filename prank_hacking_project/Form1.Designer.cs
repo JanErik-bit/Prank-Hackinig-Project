@@ -32,6 +32,7 @@
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.label1 = new System.Windows.Forms.Label();
             this.progressTimer = new System.Windows.Forms.Timer(this.components);
+            this.progresslabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // progressBar
@@ -58,12 +59,22 @@
             this.progressTimer.Interval = 10;
             this.progressTimer.Tick += new System.EventHandler(this.progressTimer_Tick);
             // 
+            // progresslabel
+            // 
+            this.progresslabel.AutoSize = true;
+            this.progresslabel.Location = new System.Drawing.Point(189, 279);
+            this.progresslabel.Name = "progresslabel";
+            this.progresslabel.Size = new System.Drawing.Size(35, 13);
+            this.progresslabel.TabIndex = 2;
+            this.progresslabel.Text = "label2";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.progresslabel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.progressBar);
             this.Name = "Form1";
@@ -78,6 +89,7 @@
         private System.Windows.Forms.ProgressBar progressBar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer progressTimer;
+        private System.Windows.Forms.Label progresslabel;
     }
 }
 

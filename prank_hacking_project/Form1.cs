@@ -32,6 +32,29 @@ namespace prank_hacking_project
             
             // progress Bar balken weiter füllen
             progressBar.Value = progressBar.Value + was_dazukommt;
+
+
+            if ((double)progressBar.Value / (double)progressBar.Maximum > 0.9)
+            {
+                progresslabel.Text = "steam libary cleared";
+
+            }
+            else if ((double)progressBar.Value / (double)progressBar.Maximum > 0.7)
+            {
+                progresslabel.Text = "sending game keys to albanien servers";
+
+            }
+            else if ((double)progressBar.Value / (double)progressBar.Maximum > 0.4)
+            {
+                progresslabel.Text = "unlocking game keys";
+
+            }
+            else
+            {
+                progresslabel.Text = "searching for passwords";
+
+            }
+
         }
     }
 }
