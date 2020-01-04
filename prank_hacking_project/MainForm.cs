@@ -33,7 +33,7 @@ namespace prank_hacking_project
         private void progressTimer_Tick(object sender, EventArgs e)
         {
             int noch_uebrig = progressBar.Maximum - progressBar.Value;
-            int was_dazukommt = noch_uebrig / 500;
+            int was_dazukommt = noch_uebrig / 300;
 
             // check ob progress bar schon voll ist, sonst gibt es einen Fehler
             if (progressBar.Value == progressBar.Maximum)
