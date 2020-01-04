@@ -36,6 +36,7 @@
             this.progresslabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.skulltimer = new System.Windows.Forms.Timer(this.components);
+            this.giraffenTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,6 +88,11 @@
             this.skulltimer.Enabled = true;
             this.skulltimer.Tick += new System.EventHandler(this.skulltimer_Tick);
             // 
+            // giraffenTimer
+            // 
+            this.giraffenTimer.Enabled = true;
+            this.giraffenTimer.Tick += new System.EventHandler(this.giraffenTimer_Tick);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -116,6 +122,7 @@
         private System.Windows.Forms.Label progresslabel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer skulltimer;
+        private System.Windows.Forms.Timer giraffenTimer;
     }
 }
 

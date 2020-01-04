@@ -46,6 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TickerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TickerForm.Designer.cs">
+      <DependentUpon>TickerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZahlenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Geldform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +77,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Geldform.resx">
       <DependentUpon>Geldform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TickerForm.resx">
+      <DependentUpon>TickerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
