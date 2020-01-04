@@ -91,6 +91,7 @@
             // giraffenTimer
             // 
             this.giraffenTimer.Enabled = true;
+            this.giraffenTimer.Interval = 1000;
             this.giraffenTimer.Tick += new System.EventHandler(this.giraffenTimer_Tick);
             // 
             // MainForm

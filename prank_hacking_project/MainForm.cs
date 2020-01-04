@@ -97,12 +97,13 @@ namespace prank_hacking_project
         {
             // Giraffenfenster zeigen
             TickerForm giraffenFenster = new TickerForm(prank_hacking_project.Properties.Resources.giraffenWiki);
-            andereFenster.Append(giraffenFenster);
+            andereFenster.Insert(0, giraffenFenster);
+
             giraffenFenster.Enabled = true;
             giraffenFenster.Show();
 
             // Timer deaktivieren, wenn genug Fenster geöffnet sind
-            if (andereFenster.Count >= 10)
+            if (andereFenster.Count >= 6)
                 giraffenTimer.Enabled = false;
         }
     }
