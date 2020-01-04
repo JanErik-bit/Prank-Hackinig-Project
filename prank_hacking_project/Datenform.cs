@@ -13,9 +13,9 @@ using System.Collections;
 
 namespace prank_hacking_project
 {
-    public partial class ZahlenForm : Form
+    public partial class Datenform : Form
     {
-        public ZahlenForm()
+        public Datenform()
         {
             InitializeComponent();
         }

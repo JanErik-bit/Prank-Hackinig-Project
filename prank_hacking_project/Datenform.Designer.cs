@@ -1,6 +1,6 @@
 ﻿namespace prank_hacking_project
 {
-    partial class ZahlenForm
+    partial class Datenform
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ZahlenForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Datenform));
             this.textBox = new System.Windows.Forms.TextBox();
             this.zahlTimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
@@ -53,16 +53,17 @@
             this.zahlTimer.Enabled = true;
             this.zahlTimer.Tick += new System.EventHandler(this.zahlTimer_Tick);
             // 
-            // ZahlenForm
+            // Datenform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(560, 334);
             this.Controls.Add(this.textBox);
             this.Enabled = false;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Location = new System.Drawing.Point(1000, 0);
-            this.Name = "ZahlenForm";
+            this.Location = new System.Drawing.Point(1100, 5);
+            this.Name = "Datenform";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.ResumeLayout(false);
             this.PerformLayout();
