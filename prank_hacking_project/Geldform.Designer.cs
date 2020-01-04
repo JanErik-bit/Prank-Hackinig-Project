@@ -1,6 +1,6 @@
 ﻿namespace prank_hacking_project
 {
-    partial class ZahlenForm
+    partial class Geldform
     {
         /// <summary>
         /// Required designer variable.
@@ -29,40 +29,35 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ZahlenForm));
-            this.textBox = new System.Windows.Forms.TextBox();
-            this.zahlTimer = new System.Windows.Forms.Timer(this.components);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Geldform));
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.geldtimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
-            // textBox
+            // textBox1
             // 
-            this.textBox.AcceptsReturn = true;
-            this.textBox.BackColor = System.Drawing.SystemColors.MenuText;
-            this.textBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox.ForeColor = System.Drawing.SystemColors.Info;
-            this.textBox.Location = new System.Drawing.Point(0, 0);
-            this.textBox.Multiline = true;
-            this.textBox.Name = "textBox";
-            this.textBox.ReadOnly = true;
-            this.textBox.Size = new System.Drawing.Size(560, 334);
-            this.textBox.TabIndex = 0;
-            this.textBox.Text = "Hallo";
+            this.textBox1.BackColor = System.Drawing.SystemColors.InfoText;
+            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox1.ForeColor = System.Drawing.SystemColors.Menu;
+            this.textBox1.Location = new System.Drawing.Point(0, 0);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(598, 429);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "hello";
             // 
-            // zahlTimer
-            // 
-            this.zahlTimer.Enabled = true;
-            this.zahlTimer.Tick += new System.EventHandler(this.zahlTimer_Tick);
-            // 
-            // ZahlenForm
+            // Geldform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(560, 334);
-            this.Controls.Add(this.textBox);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ClientSize = new System.Drawing.Size(598, 429);
+            this.Controls.Add(this.textBox1);
             this.Enabled = false;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Location = new System.Drawing.Point(1000, 0);
-            this.Name = "ZahlenForm";
+            this.Location = new System.Drawing.Point(70, 50);
+            this.Name = "Geldform";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -71,7 +66,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox;
-        private System.Windows.Forms.Timer zahlTimer;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Timer geldtimer;
     }
 }

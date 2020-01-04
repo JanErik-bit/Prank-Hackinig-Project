@@ -14,7 +14,9 @@ namespace prank_hacking_project
     {
         private bool skullZu = false;
 
-        private ZahlenForm zahlenFenster = new ZahlenForm();
+        private Datenform datenFenster = new Datenform();
+
+        private Geldform geldFenster = new Geldform();
 
         public MainForm()
         {
@@ -53,12 +55,23 @@ namespace prank_hacking_project
             {
                 progresslabel.Text = "unlocking game keys";
             }
+            // GeldFenster öffnen
+            else if (progress_anteil > 0.3)
+            {
+                
+                if (!geldFenster.Enabled)
+                {
+                    geldFenster.Enabled = true;
+                    geldFenster.Show();
+                }
+            }
+            // DatenFenster öffnen
             else if (progress_anteil > 0.1)
             {
-                if (!zahlenFenster.Enabled)
+                if (!datenFenster.Enabled)
                 {
-                    zahlenFenster.Enabled = true;
-                    zahlenFenster.Show();
+                    datenFenster.Enabled = true;
+                    datenFenster.Show();
                 }
             }
             else
