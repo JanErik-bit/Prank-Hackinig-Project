@@ -14,11 +14,16 @@ namespace prank_hacking_project
     {
         private bool skullZu = false;
 
-        private Datenform datenFenster = new Datenform();
-
         private Geldform geldFenster = new Geldform();
 
         private List<Form> andereFenster = new List<Form>();
+
+        private int geöffnete_datenfenster = 0;
+        private Point[] datenFensterLocations = {
+            new Point(50, 100),
+            new Point(1200, 200),
+            new Point(700, 10),
+        };
 
         public MainForm()
         {
@@ -71,10 +76,22 @@ namespace prank_hacking_project
             // DatenFenster öffnen
             else if (progress_anteil > 0.1)
             {
-                if (!datenFenster.Enabled)
+                if (geöffnete_datenfenster < datenFensterLocations.Length)
                 {
+                    // neues Datenfenster erstellen
+                    Datenform datenFenster = new Datenform();
+
+                    // anzeigen
                     datenFenster.Enabled = true;
                     datenFenster.Show();
+
+                    // position setzen
+                    datenFenster.Location = datenFensterLocations[geöffnete_datenfenster];
+
+                    // zur Liste hinzufügen
+                    andereFenster.Insert(0, datenFenster);
+
+                    geöffnete_datenfenster++;
                 }
             }
             else
