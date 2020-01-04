@@ -40,5 +40,10 @@ namespace prank_hacking_project
         {
             geldtimer.Enabled = true;
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
