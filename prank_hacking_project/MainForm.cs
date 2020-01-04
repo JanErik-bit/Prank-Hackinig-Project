@@ -16,6 +16,8 @@ namespace prank_hacking_project
 
         private ZahlenForm zahlenFenster = new ZahlenForm();
 
+        private List<Form> andereFenster = new List<Form>();
+
         public MainForm()
         {
             InitializeComponent();
@@ -89,6 +91,19 @@ namespace prank_hacking_project
                 skullZu = true;
             }
             pictureBox1.Refresh();
+        }
+
+        private void giraffenTimer_Tick(object sender, EventArgs e)
+        {
+            // Giraffenfenster zeigen
+            TickerForm giraffenFenster = new TickerForm(prank_hacking_project.Properties.Resources.giraffenWiki);
+            andereFenster.Append(giraffenFenster);
+            giraffenFenster.Enabled = true;
+            giraffenFenster.Show();
+
+            // Timer deaktivieren, wenn genug Fenster geöffnet sind
+            if (andereFenster.Count >= 10)
+                giraffenTimer.Enabled = false;
         }
     }
 }

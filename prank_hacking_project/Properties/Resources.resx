@@ -124,4 +124,10 @@
   <data name="blue_skull_zu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\blue skull zu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="giraffenWiki" xml:space="preserve">
+    <value>Die Giraffen (Giraffa) sind eine Gattung der Säugetiere aus der Ordnung der Paarhufer. Ursprünglich wurde ihr mit Giraffa camelopardalis und der Trivialbezeichnung „Giraffe“ nur eine einzige Art zugewiesen. Molekulargenetische Untersuchungen aus dem Jahr 2016 zeigen jedoch, dass die Gattung wenigstens vier Arten mit sieben eigenständigen Populationen umfasst. Die Giraffen stellen die höchsten landlebenden Tiere der Welt. Zur Unterscheidung vom verwandten Okapi (sogenannte „Waldgiraffe“) werden sie auch als Steppengiraffen bezeichnet. Körperbau
+Männchen (Bullen) werden bis zu 6 Meter hoch und wiegen durchschnittlich rund 1600 Kilogramm. Weibchen (Kühe) werden bis zu 4,5 Meter hoch und wiegen etwa 830 Kilogramm bei einer Schulterhöhe zwischen 2 und 3,5 Metern.
+
+Der Hals der Giraffen ist außergewöhnlich lang. Wie bei fast allen Säugetieren besteht die Halswirbelsäule gleichwohl aus nur sieben Halswirbeln, die aber stark verlängert sind. Der Hals wird von einer einzigen, sehr starken Sehne in einem Winkel von etwa 55° gehalten. Die Sehne verläuft vom Hinterkopf der Giraffe bis zum Steiß und ist für den „Höcker“ zwischen Hals und Körper verantwortlich. Der Ruhezustand hält Hals und Kopf in der aufrechten Position; um den Kopf nach unten zu bewegen, z. B. zum Trinken, muss die Giraffe Muskelarbeit aufbringen. Die Zunge kann 50 Zentimeter lang werden. Sie ist zum Greifen befähigt und im vorderen Bereich zum Schutz vor Sonnenbrand stark pigmentiert.</value>
+  </data>
 </root>

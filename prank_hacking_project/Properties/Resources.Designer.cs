@@ -79,5 +79,14 @@ namespace prank_hacking_project.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Die Giraffen (Giraffa) sind eine Gattung der Säugetiere aus der Ordnung der Paarhufer. Ursprünglich wurde ihr mit Giraffa camelopardalis und der Trivialbezeichnung „Giraffe“ nur eine einzige Art zugewiesen. Molekulargenetische Untersuchungen aus dem Jahr 2016 zeigen jedoch, dass die Gattung wenigstens vier Arten mit sieben eigenständigen Populationen umfasst. Die Giraffen stellen die höchsten landlebenden Tiere der Welt. Zur Unterscheidung vom verwandten Okapi (sogenannte „Waldgiraffe“) werden sie auch als  [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        /// </summary>
+        internal static string giraffenWiki {
+            get {
+                return ResourceManager.GetString("giraffenWiki", resourceCulture);
+            }
+        }
     }
 }
