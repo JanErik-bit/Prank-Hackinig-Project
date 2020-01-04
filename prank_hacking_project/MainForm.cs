@@ -65,6 +65,7 @@ namespace prank_hacking_project
                 {
                     geldFenster.Enabled = true;
                     geldFenster.Show();
+                    geldFenster.timerStarten();
                 }
             }
             // DatenFenster öffnen

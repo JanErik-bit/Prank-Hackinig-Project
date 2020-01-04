@@ -44,7 +44,11 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(598, 429);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "hello";
+            // 
+            // geldtimer
+            // 
+            this.geldtimer.Interval = 500;
+            this.geldtimer.Tick += new System.EventHandler(this.geldtimer_Tick);
             // 
             // Geldform
             // 
@@ -56,7 +60,7 @@
             this.Enabled = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Location = new System.Drawing.Point(70, 50);
+            this.Location = new System.Drawing.Point(70, 500);
             this.Name = "Geldform";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.ResumeLayout(false);

@@ -81,6 +81,56 @@ namespace prank_hacking_project.Properties {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Reseving money from your Accounts 
+        ///
+        ///
+        ///Extracting....
+        ///
+        ///
+        ///
+        ///PayPay
+        ///
+        ///-17.000.000 $
+        ///
+        ///-14.000.000 $
+        ///
+        ///-50.000 €
+        ///
+        ///-18.000.000 €
+        ///
+        ///Steam-wallet
+        ///
+        ///-25.000.000 €
+        ///
+        ///-78.000.000 $
+        ///
+        ///-300.000 $
+        ///
+        ///-25 €
+        ///
+        ///Bank-Account
+        ///
+        ///-45.000.000 $
+        ///
+        ///-3.000.000 €
+        ///
+        ///-69.000.000€
+        ///
+        ///-35.000 $
+        ///
+        ///----------------------------
+        ///
+        ///TOTAL LOSS
+        ///
+        ///everything ähnelt.
+        /// </summary>
+        internal static string Geld {
+            get {
+                return ResourceManager.GetString("Geld", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Die Giraffen (Giraffa) sind eine Gattung der Säugetiere aus der Ordnung der Paarhufer. Ursprünglich wurde ihr mit Giraffa camelopardalis und der Trivialbezeichnung „Giraffe“ nur eine einzige Art zugewiesen. Molekulargenetische Untersuchungen aus dem Jahr 2016 zeigen jedoch, dass die Gattung wenigstens vier Arten mit sieben eigenständigen Populationen umfasst. Die Giraffen stellen die höchsten landlebenden Tiere der Welt. Zur Unterscheidung vom verwandten Okapi (sogenannte „Waldgiraffe“) werden sie auch als  [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
         /// </summary>
         internal static string giraffenWiki {
